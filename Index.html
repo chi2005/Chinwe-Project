@@ -1,0 +1,222 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website by Chinwe Chibuke</title>
+
+    <link rel="stylesheet" href="../Chinwe-Project/css/style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image\CHINWE-LOGO-01.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Front-end Developer</p>
+                <h1>Hi, I'm <span>Chinwe</span><br>Chibuike a Canadian</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/chinwe-pic.jpeg" alt="">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a goal-getter, always willing to learn new skills. I am friendly, helpful and polite, have a good sense of humour. I am able to work independently in busy environments and also within a team setting. I am outgoing and tactful, and able to listen effectively when solving problems.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Front end</li>
+                            <li><span>Digital Marketer</span><br>CRM</li>
+                            <li><span>Graphics design</span><br>UI/UX</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2019 - Current</span><br>Mailroom Associate</li>
+                            <li><span>2012 - 2019</span><br>Receptionist</li>
+                            <li><span>2009 - 2011</span><br>Banking officer</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2005</span><br>Bachelor in Chemistry</li>
+                            <li><span>2009</span><br>Masters in business administration</li>
+                            <li><span>2012</span><br>Canadian securities institute</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Web Design</h2>
+                    <p>We provide you with a customized website design that's perfect 
+                       for your business or personal site. 
+                       We work with you to create a design that matches your brand, while giving your customers a seamless user experience that will delight them.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <h2>Customer relation manager</h2>
+                    <p>We manage all your company's relationships and interactions with customers and potential customers. The goal is simple: 
+                        Improve business relationships to grow your business.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web development</h2>
+                    <p> web development, ongoing maintenance and support, web hosting, 
+                        search engine optimization, ad management, etc.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image\work-1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Mailroom Associates</h3>
+                        <p>Perform collating, binding and duplicating tasks involve in an organization.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="image\work-2t.jpg" alt="">
+                    <div class="layer">
+                        <h3>CRM</h3>
+                        <p>We manage all your company's relationships and interactions with customers and potential customers. The goal is simple: 
+                            Improve business relationships to grow your business. 
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="image\work-3.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Banking officer</h3>
+                        <p>accountable for overseeing a bank's daily operations, including customer service, transactions, loans...
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>lillian.chibuike@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/home.php"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="#" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="emaill" placeholder="Your Email" required>
+                        <textarea name="Message" rows="5"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright Chinwe. 2023</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+    </script>
+
+    <script>
+        
+       var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-150px";
+        }
+
+    </script>
+</body>
+</html>
